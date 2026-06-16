@@ -108,11 +108,226 @@
         <p>Phone: +254 700 123 456</p>
         <p>Location: Nairobi, Kenya</p>
     </section>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    <hr>
+body{
+    font-family:Arial, sans-serif;
+    background-color:#fff8e7;
+    color:#333;
+}
 
-    <footer>
-        <p>&copy; 2026 Savory Bites Restaurant. All Rights Reserved.</p>
+/* Header */
+header{
+    background-color:#8B0000;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Center Navigation */
+nav{
+    background-color:#d2691e;
+    padding:15px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    padding:50px;
+    background-color:#f4e1c1;
+}
+
+.hero h2{
+    margin-bottom:15px;
+}
+
+/* Table Section */
+.table-section{
+    padding:30px;
+}
+
+.table-section h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#8B0000;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background-color:#8B0000;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background-color:#ffe4b5;
+}
+
+tr:nth-child(odd){
+    background-color:#fffaf0;
+}
+
+td:first-child{
+    background-color:#f0c27b;
+    font-weight:bold;
+}
+
+/* Gallery Section */
+.gallery{
+    padding:30px;
+}
+
+.gallery h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#8B0000;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.grid img,
+.grid video{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer{
+    background-color:#8B0000;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Savitory Bites Restaurant</h1>
+    <p>Delicious Food, Great Taste!</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h2>Welcome to Savitory Bites</h2>
+    <p>Enjoy fresh meals, refreshing drinks and unforgettable dining experiences.</p>
+</section>
+
+<!-- Full Page Table -->
+<section class="table-section">
+    <h2>Restaurant Menu</h2>
+
+    <table border="1">
+        <tr>
+            <th>Food Item</th>
+            <th>Description</th>
+            <th>Price (Ksh)</th>
+        </tr>
+
+        <tr>
+            <td>Pilau</td>
+            <td>Spiced rice with beef</td>
+            <td>450</td>
+        </tr>
+
+        <tr>
+            <td>Chicken Fry</td>
+            <td>Served with fries</td>
+            <td>650</td>
+        </tr>
+
+        <tr>
+            <td>Burger</td>
+            <td>Beef burger with cheese</td>
+            <td>550</td>
+        </tr>
+
+        <tr>
+            <td>Pizza</td>
+            <td>Large mixed pizza</td>
+            <td>1200</td>
+        </tr>
+
+        <tr>
+            <td>Fresh Juice</td>
+            <td>Mango or Passion</td>
+            <td>250</td>
+        </tr>
+    </table>
+</section>
+
+<!-- 2x2 Images and Videos Grid -->
+<section class="gallery">
+    <h2>Food Gallery</h2>
+
+    <div class="grid">
+
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Pizza">
+
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Burger">
+
+        <video controls>
+            <source src="restaurant-video1.mp4" type="video/mp4">
+        </video>
+
+        <video controls>
+            <source src="restaurant-video2.mp4" type="video/mp4">
+        </video>
+
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Savitory Bites Restaurant. All Rights Reserved.</p>
     </footer>
 
 </body>
