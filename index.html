@@ -4,217 +4,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savory Bites Restaurant</title>
-
+    
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, sans-serif;
-    background-color:#fff8e7;
-    color:#333;
-}
-
-/* Header */
-header{
-    background-color:#8B0000;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-/* Navigation */
-nav{
-    background-color:#d2691e;
-    padding:15px;
-}
-
-nav ul{
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    gap:30px;
-}
-
-nav ul li a{
-    text-decoration:none;
-    color:white;
-    font-weight:bold;
-    font-size:18px;
-}
-
-nav ul li a:hover{
-    color:yellow;
-}
-
-/* Hero */
-.hero{
-    text-align:center;
-    padding:50px;
-    background-color:#f4e1c1;
-}
-
-/* Table */
-.table-section{
-    padding:30px;
-}
-
-.table-section h2{
-    text-align:center;
-    margin-bottom:20px;
-    color:#8B0000;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-}
-
-th{
-    background-color:#8B0000;
-    color:white;
-    padding:15px;
-}
-
-td{
-    padding:15px;
-    text-align:center;
-}
-
-tr:nth-child(even){
-    background-color:#ffe4b5;
-}
-
-tr:nth-child(odd){
-    background-color:#fffaf0;
-}
-
-/* Gallery */
-.gallery{
-    padding:30px;
-}
-
-.gallery h2{
-    text-align:center;
-    margin-bottom:20px;
-    color:#8B0000;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
-}
-
-.grid img,
-.grid video{
-    width:100%;
-    border-radius:10px;
-}
-</style>
 
 <body>
 
-<header>
-    <h1>Savory Bites Restaurant</h1>
-    <p>Delicious Meals, Fresh Ingredients, Great Experience.</p>
-</header>
+    <header>
+        <h1>Savory Bites Restaurant</h1>
+        <p>Delicious Meals, Fresh Ingredients, Great Experience.</p>
 
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="hero" id="home">
-    <h2>Welcome to Savory Bites</h2>
-    <p>Enjoy fresh meals, refreshing drinks and unforgettable dining experiences.</p>
-</section>
+    <hr>
 
-<section class="table-section" id="menu">
-    <h2>Restaurant Menu</h2>
+    <section id="home">
+        <h2>Welcome to Savory Bites</h2>
+        <p>
+            Savory Bites Restaurant offers delicious meals prepared with
+            fresh ingredients and served in a warm, friendly environment.
+        </p>
+    </section>
 
-    <table border="1">
-        <tr>
-            <th>Food Item</th>
-            <th>Description</th>
-            <th>Price (Ksh)</th>
-        </tr>
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>
+            To provide high-quality, affordable, and delicious meals while
+            creating memorable dining experiences for our customers.
+        </p>
+    </section>
 
-        <tr>
-            <td>Pilau</td>
-            <td>Spiced rice with beef</td>
-            <td>450</td>
-        </tr>
+    <hr>
 
-        <tr>
-            <td>Chicken Fry</td>
-            <td>Served with fries</td>
-            <td>650</td>
-        </tr>
+    <section id="menu">
+        <h2>Popular Menu Items</h2>
 
-        <tr>
-            <td>Burger</td>
-            <td>Beef burger with cheese</td>
-            <td>550</td>
-        </tr>
+        <ul>
+            <li>Grilled Fish</li>
+            <li>Chocolate Cake</li>
+            <li>Mango Juice</li>
+            <li>Chicken Pilau</li>
+            <li>Fruit Salad</li>
+        </ul>
+    </section>
 
-        <tr>
-            <td>Pizza</td>
-            <td>Large mixed pizza</td>
-            <td>1200</td>
-        </tr>
+    <hr>
 
-        <tr>
-            <td>Fresh Juice</td>
-            <td>Mango or Passion</td>
-            <td>250</td>
-        </tr>
-    </table>
-</section>
+    <section id="gallery">
+        <h2>Food Gallery</h2>
 
-<section class="gallery" id="gallery">
-    <h2>Food Gallery</h2>
+        <img src="https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=300"
+             alt="Grilled Fish" width="300">
 
-    <div class="grid">
-        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Pizza">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300"
+             alt="Chocolate Cake" width="300">
 
-        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Burger">
+        <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=300"
+             alt="Mango Juice" width="300">
 
-        <video controls>
-            <source src="restaurant-video1.mp4" type="video/mp4">
-        </video>
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300"
+             alt="Restaurant Food" width="300">
+    </section>
 
-        <video controls>
-            <source src="restaurant-video2.mp4" type="video/mp4">
-        </video>
-    </div>
-</section>
+    <hr>
 
-<section id="contact" class="table-section">
-    <h2>Contact Us</h2>
-    <p>Email: info@savorybites.com</p>
-    <p>Phone: +254 700 123 456</p>
-    <p>Location: Nairobi, Kenya</p>
-</section>
+    <section id="audio">
+        <h2>Restaurant Background Music</h2>
 
-<footer>
-    <p>&copy; 2026 Savory Bites Restaurant. All Rights Reserved.</p>
-</footer>
+        <audio controls>
+            <source src="https://cdn.pixabay.com/download/audio/2022/02/19/audio_bc499a35fb.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
 
-<!-- ✅ POP-UP MESSAGE -->
-<script>
-    alert("Welcome to Savory Bites Restaurant!");
-</script>
+    <hr>
+
+    <section id="video">
+        <h2>Cooking Video</h2>
+
+        <p>Watch our chefs preparing delicious meals.</p>
+
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/dA0VGEbbw4g"
+            title="Cooking Video"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <p>Email: info@savorybites.com</p>
+        <p>Phone: +254 700 123 456</p>
+        <p>Location: Nairobi, Kenya</p>
+    </section>
+
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+        font-family:Arial, sans-serif;
+        background-color:#fff8e7;
+        color:#333;
+    }
+
+    header{
+        background-color:#8B0000;
+        color:white;
+        text-align:center;
+        padding:20px;
+    }
+
+    nav{
+        background-color:#d2691e;
+        padding:15px;
+    }
+
+    nav ul{
+        list-style:none;
+        display:flex;
+        justify-content:center;
+        gap:30px;
+    }
+
+    nav ul li a{
+        text-decoration:none;
+        color:white;
+        font-weight:bold;
+        font-size:18px;
+    }
+
+    nav ul li a:hover{
+        color:yellow;
+    }
+
+    .hero{
+        text-align:center;
+        padding:50px;
+        background-color:#f4e1c1;
+    }
+
+    .table-section{
+        padding:30px;
+    }
+
+    .table-section h2{
+        text-align:center;
+        margin-bottom:20px;
+        color:#8B0000;
+    }
+
+    table{
+        width:100%;
+        border-collapse:collapse;
+    }
+
+    th{
+        background-color:#8B0000;
+        color:white;
+        padding:15px;
+    }
+
+    td{
+        padding:15px;
+        text-align:center;
+    }
+
+    tr:nth-child(even){
+        background-color:#ffe4b5;
+    }
+
+    tr:nth-child(odd){
+        background-color:#fffaf0;
+    }
+
+    td:first-child{
+        background-color:#f0c27b;
+        font-weight:bold;
+    }
+
+    .gallery{
+        padding:30px;
+    }
+
+    .gallery h2{
+        text-align:center;
+        margin-bottom:20px;
+        color:#8B0000;
+    }
+
+    .grid{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
+
+    .grid img,
+    .grid video{
+        width:100%;
+    }
+    </style>
+
+    <!-- ✅ ONLY ADDITION (POP-UP MESSAGE) -->
+    <script>
+        alert("Welcome to Savory Bites Restaurant!");
+    </script>
 
 </body>
-        </html>
+            </html>
