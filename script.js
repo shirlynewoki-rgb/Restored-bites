@@ -61,3 +61,6 @@ function validateForm(){
     alert("Form Submitted Successfully!");
     return true;
         }
+<script>
+    alert("Welcome to Savory Bites Restaurant!");
+</script>
