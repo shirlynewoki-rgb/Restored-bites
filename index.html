@@ -4,114 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savory Bites Restaurant</title>
-    
+
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 
-
-<body>
-
-    <header>
-        <h1>Savory Bites Restaurant</h1>
-        <p>Delicious Meals, Fresh Ingredients, Great Experience.</p>
-
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#mission">Mission</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#video">Video</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <hr>
-
-    <section id="home">
-        <h2>Welcome to Savory Bites</h2>
-        <p>
-            Savory Bites Restaurant offers delicious meals prepared with
-            fresh ingredients and served in a warm, friendly environment.
-        </p>
-    </section>
-
-    <section id="mission">
-        <h2>Our Mission</h2>
-        <p>
-            To provide high-quality, affordable, and delicious meals while
-            creating memorable dining experiences for our customers.
-        </p>
-    </section>
-
-    <hr>
-
-    <section id="menu">
-        <h2>Popular Menu Items</h2>
-
-        <ul>
-            <li>Grilled Fish</li>
-            <li>Chocolate Cake</li>
-            <li>Mango Juice</li>
-            <li>Chicken Pilau</li>
-            <li>Fruit Salad</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <section id="gallery">
-        <h2>Food Gallery</h2>
-
-        <img src="https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=300"
-             alt="Grilled Fish" width="300">
-
-        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300"
-             alt="Chocolate Cake" width="300">
-
-        <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=300"
-             alt="Mango Juice" width="300">
-
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300"
-             alt="Restaurant Food" width="300">
-    </section>
-
-    <hr>
-
-    <section id="audio">
-        <h2>Restaurant Background Music</h2>
-
-        <audio controls>
-            <source src="https://cdn.pixabay.com/download/audio/2022/02/19/audio_bc499a35fb.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </section>
-
-    <hr>
-
-    <section id="video">
-        <h2>Cooking Video</h2>
-
-        <p>Watch our chefs preparing delicious meals.</p>
-
-        <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/dA0VGEbbw4g"
-            title="Cooking Video"
-            allowfullscreen>
-        </iframe>
-    </section>
-
-    <hr>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-
-        <p>Email: info@savorybites.com</p>
-        <p>Phone: +254 700 123 456</p>
-        <p>Location: Nairobi, Kenya</p>
-    </section>
 <style>
 *{
     margin:0;
@@ -133,7 +29,7 @@ header{
     padding:20px;
 }
 
-/* Center Navigation */
+/* Navigation */
 nav{
     background-color:#d2691e;
     padding:15px;
@@ -157,18 +53,14 @@ nav ul li a:hover{
     color:yellow;
 }
 
-/* Hero Section */
+/* Hero */
 .hero{
     text-align:center;
     padding:50px;
     background-color:#f4e1c1;
 }
 
-.hero h2{
-    margin-bottom:15px;
-}
-
-/* Table Section */
+/* Table */
 .table-section{
     padding:30px;
 }
@@ -203,12 +95,7 @@ tr:nth-child(odd){
     background-color:#fffaf0;
 }
 
-td:first-child{
-    background-color:#f0c27b;
-    font-weight:bold;
-}
-
-/* Gallery Section */
+/* Gallery */
 .gallery{
     padding:30px;
 }
@@ -227,34 +114,33 @@ td:first-child{
 
 .grid img,
 .grid video{
-
+    width:100%;
+    border-radius:10px;
 }
 </style>
-</head>
 
 <body>
 
 <header>
-    <h1>Savitory Bites Restaurant</h1>
-    <p>Delicious Food, Great Taste!</p>
+    <h1>Savory Bites Restaurant</h1>
+    <p>Delicious Meals, Fresh Ingredients, Great Experience.</p>
 </header>
 
 <nav>
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
-<section class="hero">
-    <h2>Welcome to Savitory Bites</h2>
+<section class="hero" id="home">
+    <h2>Welcome to Savory Bites</h2>
     <p>Enjoy fresh meals, refreshing drinks and unforgettable dining experiences.</p>
 </section>
 
-<!-- Full Page Table -->
-<section class="table-section">
+<section class="table-section" id="menu">
     <h2>Restaurant Menu</h2>
 
     <table border="1">
@@ -296,12 +182,10 @@ td:first-child{
     </table>
 </section>
 
-<!-- 2x2 Images and Videos Grid -->
-<section class="gallery">
+<section class="gallery" id="gallery">
     <h2>Food Gallery</h2>
 
     <div class="grid">
-
         <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Pizza">
 
         <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Burger">
@@ -313,44 +197,24 @@ td:first-child{
         <video controls>
             <source src="restaurant-video2.mp4" type="video/mp4">
         </video>
-
     </div>
 </section>
 
-<footer>
-    <p>&copy; 2026 Savitory Bites Restaurant. All Rights Reserved. 
-    
-
-    <h2>Customer Registration Form</h2>
-
-
-</div>
+<section id="contact" class="table-section">
+    <h2>Contact Us</h2>
+    <p>Email: info@savorybites.com</p>
+    <p>Phone: +254 700 123 456</p>
+    <p>Location: Nairobi, Kenya</p>
+</section>
 
 <footer>
-    <p>© 2026 Restores Bites | Owner: Shirlyne Woki</p>
+    <p>&copy; 2026 Savory Bites Restaurant. All Rights Reserved.</p>
 </footer>
 
-    <form onsubmit="return validateForm()">
+<!-- ✅ POP-UP MESSAGE -->
+<script>
+    alert("Welcome to Savory Bites Restaurant!");
+</script>
 
-        <label>Name</label>
-        <input type="text" id="name" value="Shirlyne Woki">
-
-        <label>Email</label>
-        <input type="email" id="email" value="shirlynewoki@gmail.com">
-
-        <label>Phone Number</label>
-        <input type="text" id="phone" value="0797794030">
-
-        <label>Gender</label>
-        <select id="gender">
-            <option value="">Select Gender</option>
-            <option value="Female" selected>Female</option>
-            <option value="Male">Male</option>
-        </select>
-
-        <button type="submit">Submit</button>
-
-    </form>
-    <script src="script.js"></script>
 </body>
-    </html>
+        </html>
