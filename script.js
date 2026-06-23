@@ -64,3 +64,9 @@ function validateForm(){
 <script>
     alert("Welcome to Savory Bites Restaurant!");
 </script>
+<script>
+function validateForm() {
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document
