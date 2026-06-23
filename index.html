@@ -4,168 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savory Bites Restaurant</title>
-
+    
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
-<style>
-body{
-    font-family: Arial;
-    background-color: #fff8e7;
-    margin: 0;
-    padding: 0;
-}
-
-header{
-    background-color: #8B0000;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-nav ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 20px;
-    padding: 10px;
-    background: #d2691e;
-}
-
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section{
-    padding: 20px;
-}
-
-.gallery img{
-    width: 200px;
-    margin: 10px;
-}
-
-footer{
-    background: #8B0000;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-</style>
 
 <body>
 
-<header>
-    <h1>Savory Bites Restaurant</h1>
-    <p>Delicious Meals, Fresh Ingredients, Great Experience.</p>
+    <header>
+        <h1>Savory Bites Restaurant</h1>
+        <p>Delicious Meals, Fresh Ingredients, Great Experience.</p>
 
-    <nav>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section id="home">
+        <h2>Welcome to Savory Bites</h2>
+        <p>
+            Savory Bites Restaurant offers delicious meals prepared with
+            fresh ingredients and served in a warm, friendly environment.
+        </p>
+    </section>
+
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>
+            To provide high-quality, affordable, and delicious meals while
+            creating memorable dining experiences for our customers.
+        </p>
+    </section>
+
+    <hr>
+
+    <section id="menu">
+        <h2>Popular Menu Items</h2>
+
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#video">Video</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#form">Register</a></li>
+            <li>Grilled Fish</li>
+            <li>Chocolate Cake</li>
+            <li>Mango Juice</li>
+            <li>Chicken Pilau</li>
+            <li>Fruit Salad</li>
         </ul>
-    </nav>
-</header>
+    </section>
 
-<section id="home">
-    <h2>Welcome</h2>
-    <p>We serve fresh and delicious meals every day.</p>
-</section>
+    <hr>
 
-<section id="menu">
-    <h2>Menu</h2>
-    <ul>
-        <li>Grilled Fish</li>
-        <li>Chicken Pilau</li>
-        <li>Burger</li>
-        <li>Pizza</li>
-        <li>Mango Juice</li>
-    </ul>
-</section>
+    <section id="gallery">
+        <h2>Food Gallery</h2>
 
-<section id="gallery" class="gallery">
-    <h2>Gallery</h2>
+        <img src="https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=300"
+             alt="Grilled Fish" width="300">
 
-    <img src="https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=300">
-    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300">
-    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300">
-    <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=300">
-</section>
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300"
+             alt="Chocolate Cake" width="300">
 
-<section id="video">
-    <h2>Cooking Video</h2>
+        <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=300"
+             alt="Mango Juice" width="300">
 
-    <iframe width="400" height="250"
-        src="https://www.youtube.com/embed/dA0VGEbbw4g"
-        allowfullscreen>
-    </iframe>
-</section>
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300"
+             alt="Restaurant Food" width="300">
+    </section>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@savorybites.com</p>
-    <p>Phone: +254 700 123 456</p>
-    <p>Location: Nairobi, Kenya</p>
-</section>
+    <hr>
 
-<hr>
+    <section id="audio">
+        <h2>Restaurant Background Music</h2>
 
-<!-- ✅ REGISTRATION FORM -->
-<section id="form">
-    <h2>Customer Registration Form</h2>
+        <audio controls>
+            <source src="https://cdn.pixabay.com/download/audio/2022/02/19/audio_bc499a35fb.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
 
-    <form onsubmit="return submitForm()">
+    <hr>
 
-        <label>Name</label><br>
-        <input type="text" id="name"><br><br>
+    <section id="video">
+        <h2>Cooking Video</h2>
 
-        <label>Email</label><br>
-        <input type="email" id="email"><br><br>
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/dA0VGEbbw4g"
+            title="Cooking Video"
+            allowfullscreen>
+        </iframe>
+    </section>
 
-        <label>Phone</label><br>
-        <input type="text" id="phone"><br><br>
+    <hr>
 
-        <label>Gender</label><br>
-        <select id="gender">
-            <option value="">Select</option>
-            <option value="Female">Female</option>
-            <option value="Male">Male</option>
-        </select><br><br>
+    <section id="contact">
+        <h2>Contact Us</h2>
 
-        <button type="submit">Submit</button>
+        <p>Email: info@savorybites.com</p>
+        <p>Phone: +254 700 123 456</p>
+        <p>Location: Nairobi, Kenya</p>
+    </section>
 
-    </form>
-</section>
+    <hr>
 
-<footer>
-    <p>&copy; 2026 Savory Bites Restaurant</p>
-</footer>
+    <!-- REGISTRATION FORM -->
+    <section id="form">
+        <h2>Customer Registration Form</h2>
 
-<!-- ✅ POP-UP SCRIPT (SUBMIT BUTTON) -->
-<script>
-function submitForm() {
+        <form onsubmit="return validateForm()">
 
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let phone = document.getElementById("phone").value;
-    let gender = document.getElementById("gender").value;
+            <label>Name</label><br>
+            <input type="text" id="name"><br><br>
 
-    if (name === "" || email === "" || phone === "" || gender === "") {
-        alert("Please fill in all fields before submitting!");
-        return false;
-    }
+            <label>Email</label><br>
+            <input type="email" id="email"><br><br>
 
-    alert("Form submitted successfully! Welcome to Savory Bites.");
+            <label>Phone Number</label><br>
+            <input type="text" id="phone"><br><br>
 
-    return true;
-}
-</script>
-
-</body>
-    </html>
+            <label>Gender</label><br>
+            <select id="gender">
+                <option value="">Select Gender</option>
+                <option value="Female">Female</
